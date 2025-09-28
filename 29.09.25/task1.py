@@ -12,5 +12,4 @@ def max_of_two(x, y):
         return x            
     else:          
         return y
-    
 print(max_of_two(322, 666))
