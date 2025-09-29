@@ -1,15 +1,28 @@
 def greet(name):
     print(f"привет, {name}!")
-greet("Леша")
 
-def square(number):
-    return number**2
-print(square(4))
+u_name = input("введите своё имя: ")
+greet(u_name)
 
+
+def square(n):
+    return n**2
+
+n = int(input("введите число для возведения в квадрат: "))
+print("результат:", square(n))
 
 def max_of_two(x, y):
-    if x>y:              
-        return x            
-    else:          
+    if x>y:
+        return x
+    elif x<y:
         return y
-print(max_of_two(322, 666))
+    else:
+        print("числа равны")
+        return None
+
+a=int(input("введите первое число: "))
+b=int(input("введите второе число: "))
+
+r=max_of_two(a, b)
+if r is not None:
+    print("наибольшее число:", r)
