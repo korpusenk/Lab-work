@@ -1,12 +1,12 @@
 def greet(name):
     print(f"привет, {name}!")
-u_name = input("введите своё имя: ")
+u_name=input("введите своё имя: ")
 greet(u_name)
 
 
 def square(n):
     return n**2
-n = int(input("введите число для возведения в квадрат: "))
+n=int(input("введите число для возведения в квадрат: "))
 print("результат:", square(n))
 
 
